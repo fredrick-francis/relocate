@@ -29,7 +29,7 @@ export default function ImageTextSlider() {
           >
             {imagePaths.map((path, index) => (
               <SwiperSlide key={index}>
-                <div className="position-relative w-100" style={{ height: '350px' }}>
+                <div className="position-relative w-100">
                   <Image
                     src={path}
                     alt={`Slide ${index + 1}`}

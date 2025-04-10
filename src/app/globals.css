@@ -69,3 +69,4 @@ p i{font-size: 100px;}
   100% { transform: translate(0px, 0px); }
 }
 .bxx { z-index: 1050 }
+.me-3{ width: 60; height: 60; position: relative }

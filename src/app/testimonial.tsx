@@ -1,6 +1,6 @@
-// components/TestimonialsSwiper.tsx
 'use client';
 
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -43,28 +43,24 @@ export default function TestimonialsSwiper() {
         navigation
         pagination={{ clickable: true }}
         breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="card p-4 shadow-sm h-100 border-0">
               <div className="d-flex align-items-center mb-3">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="rounded-circle me-3"
-                  width={60}
-                  height={60}
-                />
+                <div className="me-3">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    className="rounded-circle"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
                 <h5 className="mb-0">{item.name}</h5>
               </div>
               <p className="text-muted">"{item.comment}"</p>

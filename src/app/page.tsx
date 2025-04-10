@@ -1,5 +1,6 @@
 import ImageTextSlider from './ImageTextSlider';
 import TestimonialsSwiper from './testimonial';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -7,7 +8,14 @@ export default function Home() {
       <header>
         <div className="up-box container">
           <div className="container text-center">
-            <img src="/logo.png" alt="" width="200px" className="mt-5" />
+            {/*<img src="/logo.png" alt="" width="200px" className="mt-5" />*/}
+            <Image
+              src={'/logo.png'}
+              alt={'item.name'}
+              width="200"
+              className="mt-5"
+              fill
+            />
           </div>
           
         </div>
@@ -96,8 +104,7 @@ export default function Home() {
 
 
 <button
-  className="btn btn-success position-fixed bottom-0 end-0 m-4 rounded shadow whatsapp-float"
-  style={{ zIndex: 1050 }}
+  className="btn btn-success bxx position-fixed bottom-0 end-0 m-4 rounded shadow whatsapp-float"
   data-bs-toggle="modal"
   data-bs-target="#whatsappModal"
   aria-label="Chat with us on WhatsApp"
