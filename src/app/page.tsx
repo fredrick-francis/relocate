@@ -10,11 +10,12 @@ export default function Home() {
           <div className="container text-center">
             {/*<img src="/logo.png" alt="" width="200px" className="mt-5" />*/}
             <Image
-              src={'/logo.png'}
-              alt={'item.name'}
-              width="200"
+              src="/logo.png"
+              alt="RelocateTz Logo"
+              width={200}
+              height={150}
               className="mt-5"
-              fill
+              priority
             />
           </div>
           

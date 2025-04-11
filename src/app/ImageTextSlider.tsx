@@ -29,12 +29,12 @@ export default function ImageTextSlider() {
           >
             {imagePaths.map((path, index) => (
               <SwiperSlide key={index}>
-                <div className="position-relative w-100">
+                <div className="position-relative w-100" style={{ height: '300px' }}>
                   <Image
                     src={path}
                     alt={`Slide ${index + 1}`}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
                     className="rounded"
                     priority={index === 0}
                   />
@@ -51,7 +51,7 @@ export default function ImageTextSlider() {
             Tanzania is a land of breathtaking beauty, rich culture and endless opportunity.
             From the serene beaches to the bustling streets of Dar es Salaam and the tranquil
             highlands of Arusha, Tanzania offers a unique lifestyle that blends adventure with
-            ease of living. Whether you're drawn by the natural wonders, the vibrant communities,
+            ease of living. Whether you&rsquo;re drawn by the natural wonders, the vibrant communities,
             or the potential for personal and professional growth, Tanzania is fast becoming a
             top destination for those seeking a fresh start or a new experience.
           </p>
