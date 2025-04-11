@@ -63,7 +63,7 @@ export default function TestimonialsSwiper() {
                 </div>
                 <h5 className="mb-0">{item.name}</h5>
               </div>
-              <p className="text-muted">"{item.comment}"</p>
+              <p className="text-muted">&quot;{item.comment}&quot;</p>
               <div className="text-warning">
                 {'★'.repeat(item.rating)}
                 {'☆'.repeat(5 - item.rating)}

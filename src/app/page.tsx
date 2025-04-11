@@ -40,7 +40,7 @@ export default function Home() {
   <div className="container text-center mt-5 mb-5">
     <h2 className="mb-4">Our Services</h2>
     <p className="lead">
-      At Relocate Tz, we help individuals, families and entrepreneurs navigate every step of their journey to Tanzania. Whether you're planning a short visit, a trial run or a permanent move, we provide tailored support including visa guidance, flight assistance, relocation logistics and expert advice on starting a business, education for your children and identifying the best areas to live. Our goal is to make your transition smooth, informed and inspiring so you can focus on building your new life with confidence and peace of mind.
+      At Relocate Tz, we help individuals, families and entrepreneurs navigate every step of their journey to Tanzania. Whether you are planning a short visit, a trial run or a permanent move, we provide tailored support including visa guidance, flight assistance, relocation logistics and expert advice on starting a business, education for your children and identifying the best areas to live. Our goal is to make your transition smooth, informed and inspiring so you can focus on building your new life with confidence and peace of mind.
     </p>
   </div>
 
@@ -285,7 +285,7 @@ export default function Home() {
             </h2>
             <div id="faqOne" className="accordion-collapse collapse show" aria-labelledby="faqOneHeader" data-bs-parent="#faqAccordion">
               <div className="accordion-body">
-                You'll typically need a valid passport, visa, and possibly a residence permit depending on your purpose of stay.
+                You will typically need a valid passport, visa, and possibly a residence permit depending on your purpose of stay.
               </div>
             </div>
           </div>

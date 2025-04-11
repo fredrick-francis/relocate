@@ -1,6 +1,6 @@
 'use client'; // Required for client-side effects
 
-import type { Metadata } from "next";
+//import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./globals.css"; // Import your custom global styles
